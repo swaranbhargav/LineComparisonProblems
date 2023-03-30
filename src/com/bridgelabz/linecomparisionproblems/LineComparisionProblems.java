@@ -17,12 +17,15 @@ public class LineComparisionProblems {
 		int q2 = 14;
 		double lineLength2;
 		lineLength2 = Math.sqrt((p2 - p1) * (p2 - p1) + (q2 - q1) * (q2 - q1));
-		System.out.println("The length of the line between twon points is " + lineLength2);
+		System.out.println("The length of the line between two points is " + lineLength2);
+
 		if (lineLength == lineLength2) {
 			System.out.println("Both the lines are equal ");
 
-		} else {
-			System.out.println("Both the lines are not equal");
+		} else if (lineLength > lineLength2) {
+			System.out.println(" The first line is  greater than second line ");
+		} else if (lineLength < lineLength2) {
+			System.out.println(" The second line is greater than the first line");
 		}
 
 	}
